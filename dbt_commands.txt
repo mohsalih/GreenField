@@ -1,3 +1,5 @@
 dbt run
 dbt run --full-refresh
 dbt run --select "books"
+Heads up friends: The tests config in yml files is now data_tests
+dbt test --select stg_jaffle_shop
