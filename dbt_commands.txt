@@ -1,0 +1,3 @@
+dbt run
+dbt run --full-refresh
+dbt run --select "books"
