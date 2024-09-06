@@ -3,3 +3,8 @@ dbt run --full-refresh
 dbt run --select "books"
 Heads up friends: The tests config in yml files is now data_tests
 dbt test --select stg_jaffle_shop
+-- Using seed to plant a csv file into BigQuery
+dbt seed
+dbt run --select employees_raw   
+dbt run --select employees_transformed 
+dbt run --select department_salary_aggregate
